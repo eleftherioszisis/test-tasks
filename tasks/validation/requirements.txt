@@ -2,3 +2,4 @@ numpy==2.3.3
 pip==25.0.1
 uv==0.8.22
 entitysdk==0.8.4
+obi-auth @ git+https://github.com/openbraininstitute/obi-auth.git@persistent_token
