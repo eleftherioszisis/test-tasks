@@ -23,7 +23,7 @@ if __name__ == "__main__":
         partial(
             get_token,
             environment=deployment,
-            auth_method="persistent_token_id",
+            auth_mode="persistent_token_id",
             persistent_token_id=persistent_token_id,
         ),
     )
