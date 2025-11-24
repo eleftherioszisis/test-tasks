@@ -17,7 +17,7 @@ if __name__ == "__main__":
     entity_id = sys.argv[1]
 
     deployment = os.environ["DEPLOYMENT"]
-    persistent_token_id = os.environ["PERSISTENT_TOKEN"]
+    persistent_token_id = os.environ["PERSISTENT_TOKEN_ID"]
 
     token_manager = TokenFromFunction(
         partial(
