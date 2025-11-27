@@ -32,7 +32,7 @@ if __name__ == "__main__":
     data = []
     for i in range(1, 11):
         # Allocate chunks (e.g., 10 MB each)
-        data.append("X" * 500_000_000)
+        data.append(bytearray(500 * 1024 ** 2))
         print(f"Allocated another {i * 500}MB")
 
     print("Job completed")
