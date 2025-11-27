@@ -1,5 +1,4 @@
 import sys
-import sleep
 from time import sleep
 
 
@@ -28,7 +27,7 @@ def print_cgroup_limits():
 
 if __name__ == "__main__":
 
-    size_gb = sys.argv[1]
+    size_gb = int(sys.argv[1])
 
     print_cgroup_limits()
 
