@@ -27,14 +27,12 @@ def print_cgroup_limits():
 
 if __name__ == "__main__":
 
-    size_gb = int(sys.argv[1])
-
     print_cgroup_limits()
 
-    print(f"Allocating {size_gb} Gb...")
-
-    res = bytearray(size_gb * 1024 ** 3)
-
-    sleep(2)
+    data = []
+    for i in range(1, 11):
+        # Allocate chunks (e.g., 10 MB each)
+        data.append("X" * 500_000_000)
+        print(f"Allocated another {i * 500}MB")
 
     print("Job completed")
